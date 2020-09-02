@@ -17,9 +17,9 @@ a {
   transition: color .1s;
 }
 
-a:hover {
+/* a:hover {
   color: #3486eb;
-}
+} */
 
 button {
   background-color: #225ca3;
@@ -36,10 +36,12 @@ button:hover {
   background-color: #3486eb;
 }
 
+
 .box {
   border: 2px solid #ccc;
   border-radius: 5px;
   margin: 10px;
+  color: #225ca3;
 }
 
 .post-list {
@@ -103,8 +105,13 @@ header nav a {
 }
 
 header nav #logout {
-  color:  lightgoldenrodyellow;
+  color:   #225ca3;
   padding: 20px;
+  background-color: lightgoldenrodyellow;
+  border: solid;
+  border-radius: 16px;
+  padding: 16px;
+  box-shadow: 5px 10px #888888;
 }
 
 header h1 a {
@@ -121,7 +128,7 @@ main {
   padding: 2% 4%;
 }
 
-.btn-no-style {
+/* .btn-no-style {
   background: none;
   border: none;
   padding: 0;
@@ -136,7 +143,7 @@ main {
 
 .btn-no-style:hover {
   background: none;
-  color: #3486eb;
+  color: lightgoldenrodyellow;
 }
 
 .delete-post-btn {
@@ -145,7 +152,7 @@ main {
 
 .delete-post-btn:hover {
   background-color: #ff643d;
-}
+} */
 
 .post {
   margin-bottom: 2%;
@@ -158,8 +165,22 @@ main {
   color: #7d7d7d;
 }
 
-.post .title {
-  background-color: lightgray;
+.post .title a {
+  color: lightgoldenrodyellow;
+  padding: 8px;
+}
+
+div .title {
+  color: lightgoldenrodyellow;
+  background-color: #39a6b2;
+}
+
+div .meta {
+  padding: 8px;
+}
+
+div .context {
+  padding: 5px;
 }
 
 .edit-link {
