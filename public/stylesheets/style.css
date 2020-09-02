@@ -118,7 +118,7 @@ header h1 a {
   background-color: lightgoldenrodyellow;
   border: solid;
   border-radius: 16px;
-  padding: 16px;
+  padding: 5px;
   box-shadow: 5px 10px #888888;
 }
 
@@ -230,4 +230,30 @@ footer {
   justify-content: center;
   padding: 1%;
   font-size: 110%;
+}
+
+section {
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  margin: 10px;
+  color: #225ca3;
+  padding: 10px;
+}
+
+form {
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  margin: 10px;
+  color: #225ca3;
+  padding: 10px;
+}
+
+.login-form .login {
+  /* background-color: #39a6b2; */
+  /* color: lightgoldenrodyellow; */
+}
+
+.signup-form .signup {
+  /* background-color: #39a6b2; */
+  /* color: lightgoldenrodyellow; */
 }
