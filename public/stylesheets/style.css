@@ -36,9 +36,11 @@ button:hover {
   background-color: #3486eb;
 }
 
-/* .homepage {
-
-} */
+.box {
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  margin: 10px;
+}
 
 .post-list {
   margin: 0;
@@ -154,6 +156,10 @@ main {
   font-style: italic;
   font-size: 90%;
   color: #7d7d7d;
+}
+
+.post .title {
+  background-color: lightgray;
 }
 
 .edit-link {
