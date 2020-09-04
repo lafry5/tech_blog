@@ -3,9 +3,7 @@
 
 <form class="login-form">
   <div class="login">
-    <h3>Login
-      Form
-    </p>
+    <h3>Login Form </h3>
     </div>
     <div>
     <label for="email-login">email:</label>
@@ -15,20 +13,19 @@
     <label for="password-login">password:</label>
     <input type="password" id="password-login" />
   </div>
-  <div>
+  <div class="button">
     <button type="submit">login</button>
-    <button type="submit">signup instead</button>
+    {{!-- <a href="../views/partials/signup">signup instead</a> --}}
   </div>
 </form>
 
 
-{{> signup }}
+{{!-- {{> signup }} --}}
 
 {{!-- <form class="signup-form">
   <div class="signup">
-    <h3>Sign-up
-      Form
-    </p>
+    <h3>Sign-up Form
+    </h3>
     </div>
     <div>  
     <label for="username-signup">username:</label>
@@ -42,9 +39,10 @@
     <label for="password-signup">password:</label>
     <input type="password" id="password-signup" />
   </div>
-  <div>
-    <button type="submit">signup</button>
-  </div>
+  <div> --}}
+    {{!-- <button type="submit">signup instead</button> --}}
+    <a href="./partials/signup">signup instead</a>
+      {{!-- </div>
 </form> --}}
 
 <script src="/javascript/login.js"></script>

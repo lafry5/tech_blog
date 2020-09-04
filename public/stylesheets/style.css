@@ -36,6 +36,11 @@ button:hover {
   background-color: #3486eb;
 }
 
+.button {
+  color: #225ca3;
+  /* transition: color .1s;
+  background-color: #3486eb; */
+}
 
 .box {
   border: 2px solid #ccc;
@@ -233,9 +238,9 @@ footer {
 }
 
 section {
-  border: 2px solid #ccc;
+  /* border: 2px solid #ccc;
   border-radius: 5px;
-  margin: 10px;
+  margin: 10px; */
   color: #225ca3;
   padding: 10px;
 }
