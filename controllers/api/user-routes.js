@@ -53,6 +53,8 @@ router.get('/:id', (req, res) => {
     });
 });
 
+//api/users
+// used for signup route as well
 router.post('/', (req, res) => {
   // expects {username: 'Lernantino', email: 'lernantino@gmail.com', password: 'password1234'}
   User.create({
