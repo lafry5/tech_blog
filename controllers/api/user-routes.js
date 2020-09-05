@@ -91,6 +91,15 @@ router.post('/login', (req, res) => {
     }
 
 
+    // router.get("/create", (req, res) => {
+    //   if (req.session.loggedIn) {
+    //     res.redirect("/");
+    //     return;
+    //   }
+    
+    //   res.render("create");
+    // });
+
     // console.log(req.body.password);
 
     const validPassword = dbUserData.checkPassword(req.body.password);

@@ -110,6 +110,7 @@ router.get("/signup", (req, res) => {
   res.render("signup");
 });
 
+//added the following two for signup
 router.post('/signup', (req, res) => {
   // expects {username: 'Lernantino', email: 'lernantino@gmail.com', password: 'password1234'}
   User.create({

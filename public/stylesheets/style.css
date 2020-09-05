@@ -52,6 +52,7 @@ button:hover {
 .post-list {
   margin: 0;
   padding: 0;
+  /* justify-content: right; */
 }
 
 textarea, input {
@@ -76,6 +77,11 @@ form > div {
 
 form label {
   display: block;
+}
+
+label {
+  display: inline-block;
+  padding: 20px;
 }
 
 .wrapper {
@@ -159,6 +165,10 @@ main {
   background-color: #ff643d;
 } */
 
+.edit-link {
+  padding: 10px;
+}
+
 .post {
   margin-bottom: 2%;
   line-height: 150%;
@@ -167,25 +177,48 @@ main {
 .post .title span {
   font-style: italic;
   font-size: 90%;
-  color: #7d7d7d;
+  /* color: #7d7d7d;  testing this */
 }
 
 .post .title a {
-  color: lightgoldenrodyellow;
+  /* color: lightgoldenrodyellow; testing this */
   padding: 8px;
 }
 
 div .title {
-  color: lightgoldenrodyellow;
+  /* color: lightgoldenrodyellow;  testing this */
   background-color: #39a6b2;
 }
 
 div .meta {
   padding: 8px;
+  /* justify-content: right; */
 }
+
+/* .post {
+  justify-content: right;
+} */
 
 div .context {
   padding: 5px;
+  color: #225ca3;
+  background-color: lightgoldenrodyellow;
+}
+
+.edit-link:hover {
+    background-color: lightgoldenrodyellow;
+    border: solid;
+    /* border-radius: 16px; */
+    padding: 5px;
+    /* box-shadow: 5px 10px #888888; */
+}
+
+.click:hover {
+  background-color: lightgoldenrodyellow;
+  border: solid;
+  /* border-radius: 16px; */
+  padding: 5px;
+  /* box-shadow: 5px 10px #888888; */
 }
 
 .edit-link {
@@ -221,9 +254,9 @@ div .context {
   opacity: .6;
 }
 
-.new-post-form input {
+/* .new-post-form input {
   width: 300px;
-}
+} */
 
 .edit-post-form {
   margin-bottom: 5%;
@@ -261,4 +294,12 @@ form {
 .signup-form .signup {
   /* background-color: #39a6b2; */
   /* color: lightgoldenrodyellow; */
+}
+
+.new-post {
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  margin: 10px;
+  color: #225ca3;
+  padding: 10px;
 }

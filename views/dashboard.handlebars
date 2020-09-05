@@ -1,7 +1,7 @@
-<section>
-  <h2>Create New Post</h2>
+{{!-- <section>
+  <h2>Create New Post</h2> --}}
 
-  <form class="new-post-form">
+  {{!-- <form class="new-post-form">
     <div>
       <label for="post-title">Title</label>
       <input type="text" id="post-title" name="post-title" />
@@ -15,23 +15,33 @@
       <div>
       <label for="post-url">Link</label>
       <input id="post-url" name="post-url" />
+    </div> --}}
+    {{#if loggedIn}}
+    <div class="click">
+    <a href="/dashboard/create">Create New Post</a>
     </div>
-    <button type="submit" class="btn">Create</button>
-  </form>
-</section>
+    {{/if}}
+     {{!-- </form>
+</section> --}}
 
 {{#if posts.length}}
 <section>
   <h2>Your Posts</h2>
-  <ol>
+  <ol class="post-list"> 
+    <!-- There was no class for ol or li -->
     {{#each posts as |post|}}
-    <li>
+    <li class="box">
       {{> post-info post}}
       <a href="/dashboard/edit/{{post.id}}" class="edit-link">Edit post</a>
-    </li>
+     </li>
     {{/each}}
   </ol>
 </section>
 {{/if}}
 
+{{!-- {{> comments post.comments}} --}}
+
+{{#if loggedIn}}
 <script src="/javascript/add-post.js"></script>
+<script src="/javascript/comment.js"></script>
+{{/if}}

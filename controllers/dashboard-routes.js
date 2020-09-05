@@ -84,4 +84,17 @@ router.get('/edit/:id', withAuth, (req, res) => {
     });
 });
 
+router.get("/create", (req, res) => {
+  console.log(req.session.loggedIn);
+  if (!req.session.loggedIn) {
+    // res.redirect("create");
+    // return;
+    // serve create.handlebars
+    res.redirect("/login");  //looks for particular routes with /login
+    return;
+  }
+
+  res.render("create"); //serves html file
+});
+
 module.exports = router;
