@@ -30,6 +30,7 @@ button {
   transition: background-color .1s;
   cursor: pointer;
   border-radius: 5px;
+  padding: 10px;
 }
 
 button:hover {
@@ -38,6 +39,7 @@ button:hover {
 
 .button {
   color: #225ca3;
+  padding: 10px;
   /* transition: color .1s;
   background-color: #3486eb; */
 }
@@ -202,7 +204,7 @@ div .meta {
 div .context {
   padding: 5px;
   color: #225ca3;
-  background-color: lightgoldenrodyellow;
+  /* background-color: lightgoldenrodyellow; */
 }
 
 .edit-link:hover {
@@ -278,12 +280,16 @@ section {
   padding: 10px;
 }
 
-form {
+.login {
   border: 2px solid #ccc;
   border-radius: 5px;
   margin: 10px;
   color: #225ca3;
   padding: 10px;
+}
+
+h3 {
+  color: #225ca3; 
 }
 
 .login-form .login {
@@ -296,10 +302,18 @@ form {
   /* color: lightgoldenrodyellow; */
 }
 
-/* .new-post {
+.new-post-form {
   border: 2px solid #ccc;
   border-radius: 5px;
   margin: 10px;
   color: #225ca3;
   padding: 10px;
-} */
+}
+
+.signup {
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  margin: 10px;
+  color: #225ca3;
+  padding: 10px;
+}
