@@ -1,7 +1,7 @@
 const router = require('express').Router();
 const { User, Post, Comment, Vote } = require('../../models');
 
-// get all users
+// get all users; api/users
 router.get('/', (req, res) => {
   User.findAll({
     attributes: { exclude: ['password'] }
@@ -13,6 +13,7 @@ router.get('/', (req, res) => {
     });
 });
 
+// finds one user; api/users/id
 router.get('/:id', (req, res) => {
   User.findOne({
     attributes: { exclude: ['password'] },
@@ -53,7 +54,7 @@ router.get('/:id', (req, res) => {
     });
 });
 
-//api/users
+// creates a user; api/users
 // used for signup route as well
 router.post('/', (req, res) => {
   // expects {username: 'Lernantino', email: 'lernantino@gmail.com', password: 'password1234'}
@@ -77,6 +78,7 @@ router.post('/', (req, res) => {
     });
 });
 
+// user login; api/users/login
 router.post('/login', (req, res) => {
   console.log("hit the login route")
   // expects {email: 'lernantino@gmail.com', password: 'password1234'}
@@ -119,6 +121,7 @@ router.post('/login', (req, res) => {
   });
 });
 
+// user logout; api/users/logout
 router.post('/logout', (req, res) => {
   if (req.session.loggedIn) {
     req.session.destroy(() => {
@@ -153,6 +156,7 @@ router.put('/:id', (req, res) => {
     });
 });
 
+// delete a user; api/users/id
 router.delete('/:id', (req, res) => {
   User.destroy({
     where: {

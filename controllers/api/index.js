@@ -4,6 +4,7 @@ const userRoutes = require('./user-routes.js');
 const postRoutes = require('./post-routes');
 const commentRoutes = require('./comment-routes');
 
+// sets the path for the api routes
 router.use('/users', userRoutes);
 router.use('/posts', postRoutes);
 router.use('/comments', commentRoutes);
